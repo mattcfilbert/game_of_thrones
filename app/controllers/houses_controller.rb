@@ -38,12 +38,15 @@ class HousesController < ApplicationController
   end
 
   def destroy
-    @house.find(params[:id])
+    @house = House.find(params[:id])
     @house.destroy
+
+    flash[:alert] = "House disbanded!"
+    redirect_to houses_path
   end
 
   private
     def house_params
-      params.require(:house).permit(:name, :img_url)
+      params.require(:house).permit(:name, :img_url, :motto)
     end
 end

@@ -11,10 +11,10 @@
   <body>
     <nav>
       <% flash.each do |type, message| %>
-  <p class="flash <%= type %>"><%= message %></p>
-  <h1>Welcome to Westeros!</h1>
+        <p class="flash <%= type %>"><%= message %></p>
+      <% end %>
+      <h1>Welcome to Westeros!</h1>
       <h2><%= link_to "View Houses", houses_path %> </h2>
-  <% end %>
     </nav>
     <%= yield %>
   </body>

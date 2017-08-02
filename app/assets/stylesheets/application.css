@@ -19,12 +19,9 @@
    src: url('game_of_thrones.ttf') format("truetype");
  }
 
- /* assets/fonts */
- @font-face {
+ body {
    font-family: "thrones";
-   src: font-url('game_of_thrones.ttf') format("truetype");
  }
-
 
  .flash {
    border: 1px solid black;

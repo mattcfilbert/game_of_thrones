@@ -1,0 +1,18 @@
+<h2>Edit House</h2>
+
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :motto %>
+  <%= f.text_field :motto %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for @house, method: :delete do |f| %>
+  <%= f.submit "Disband!", class: "delete" %>
+<% end %>

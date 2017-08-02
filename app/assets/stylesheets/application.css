@@ -24,3 +24,13 @@
    font-family: "thrones";
    src: font-url('game_of_thrones.ttf') format("truetype");
  }
+
+
+ .flash {
+   border: 1px solid black;
+   padding: 1em;
+   background: #eee;
+ }
+
+ .alert  { color: red;  }
+ .notice { color: blue; }

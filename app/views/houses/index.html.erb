@@ -1,10 +1,17 @@
 <h2>Houses <%= link_to "(+)", new_house_path %></h2>
 
-<ul>
+
   <% @houses.each do |house| %>
-    <li>
+    <div>
       <%= link_to house.name, house %>
       <%= image_tag house.img_url %>
-    </li>
+    </div>
   <% end %>
-</ul>
+
+
+
+
+
+<% if flash[:notice] == "Is that 'The Rains of Castemere' I hear playing?" %>
+<%= audio_tag("rains.mp3", autoplay: true, controls: true, class: "hidden") %>
+<% end %>

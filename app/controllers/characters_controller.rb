@@ -40,7 +40,7 @@ class CharactersController < ApplicationController
   def destroy
     @character = Character.find(params[:id])
     @character.destroy
-    flash[:alert] = "This character has been #{@character.house.sentence}d!"
+    flash[:alert] = "#{@character.name} has been #{@character.house.sentence}d!"
     redirect_to house_path(@character.house)
   end
 

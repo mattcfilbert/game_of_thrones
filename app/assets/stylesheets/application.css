@@ -31,3 +31,7 @@
 
  .alert  { color: red;  }
  .notice { color: blue; }
+
+ .hidden {
+   display: none;
+ }

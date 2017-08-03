@@ -30,7 +30,7 @@ class HousesController < ApplicationController
     @house = House.find(params[:id])
     @house.update(house_params)
     if @house.save
-      redirect_to house_path(@house), notice: "#{@house.name} has rebranded!"
+      redirect_to house_path(@house), notice: "House #{@house.name} has rebranded!"
     else
       flash[:alert] = "Try again with all necessary info!"
       render :edit
@@ -41,7 +41,8 @@ class HousesController < ApplicationController
     @house = House.find(params[:id])
     @house.destroy
 
-    flash[:alert] = "House destroyed! Is that 'The Rains of Castemere' I hear playing?"
+    flash[:alert] = "House #{@house.name} has been destroyed! All its members have been put to the sword."
+    flash[:notice] = "Is that 'The Rains of Castemere' I hear playing?"
     redirect_to houses_path
   end
 

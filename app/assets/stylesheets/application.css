@@ -35,3 +35,16 @@
  .hidden {
    display: none;
  }
+
+ .index_img {
+   width: 300px;
+ }
+
+.house {
+  text-align: center;
+}
+
+ .houses {
+   display: flex;
+   flex-direction: row;
+ }

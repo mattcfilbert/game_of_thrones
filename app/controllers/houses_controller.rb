@@ -20,6 +20,7 @@ class HousesController < ApplicationController
 
   def show
     @house = House.find(params[:id])
+    flash[:notice] = "As House #{@house.name} always says, #{@house.motto}"
   end
 
   def edit

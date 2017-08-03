@@ -9,7 +9,12 @@
 House.destroy_all
 
 stark = House.create(name: 'Stark', sentence: 'behead', img_url: 'http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142', motto: 'Winter is coming...')
-lan = House.create(name: 'Lannister', sentence: 'assassinate', img_url: 'https://vignette2.wikia.nocookie.net/gameofthrones/images/0/0b/House-Lannister-heraldry.jpg/revision/latest?cb=20140402110342', motto: 'Hear me roar!')
+lan = House.create(name: 'Lannister', sentence: 'assassinate', img_url: 'https://vignette3.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest?cb=20170101095357', motto: 'Hear me roar!')
+bar = House.create(name: 'Baratheon', sentence: 'bludgeon', img_url: 'https://vignette4.wikia.nocookie.net/gameofthrones/images/0/00/House-Baratheon-Main-Shield.PNG/revision/latest?cb=20170519002924', motto: 'Ours is the fury!')
+ty = House.create(name: 'Tyrell', sentence: 'poison', img_url: 'https://vignette2.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest?cb=20170108163035', motto: 'Growing strong!')
+mar = House.create(name: 'Martell', sentence: 'spear', img_url: 'https://vignette2.wikia.nocookie.net/gameofthrones/images/7/7e/House-Martell-Main-Shield.PNG/revision/latest?cb=20170523024859', motto: 'Family, duty, honor.')
+gry = House.create(name: 'Greyjoy', sentence: 'drown', img_url: 'https://vignette3.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest?cb=20170523015836', motto: 'We do not sow.')
+tar = House.create(name: 'Targaryen', sentence: 'burn', img_url: 'https://vignette2.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest?cb=20170510235320', motto: 'Fire and blood.')
 
 arya = Character.create(name: 'Arya', img_url: 'https://media.vanityfair.com/photos/54170a772e32fc85609d1b2f/master/pass/maisie_GOT_close.png', house: stark)
 jon = stark.characters.create(name: 'Jon', img_url: 'http://media.vanityfair.com/photos/576195600904a5835f0daee5/master/w_768,c_limit/GOT609_091715_HS_DSC_7379%5B1%5D.jpg')

@@ -1,0 +1,13 @@
+<h2>Welcome to the Game of Thrones!</h2>
+<h3>We shall see if House <%= "#{@house.name}" %> deems you worthy...</h3>
+
+<%= form_for [@house, @character] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit %>
+
+<% end %>

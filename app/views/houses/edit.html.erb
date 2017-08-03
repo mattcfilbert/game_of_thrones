@@ -1,4 +1,4 @@
-<h2>Edit House</h2>
+<h2>Rebrand House</h2>
 
 <%= form_for @house do |f| %>
   <%= f.label :name %>
@@ -10,9 +10,12 @@
   <%= f.label :motto %>
   <%= f.text_field :motto %>
 
+  <%= f.label :death_sentence %>
+  <%= f.text_field :sentence %>
+
   <%= f.submit %>
 <% end %>
 
 <%= form_for @house, method: :delete do |f| %>
-  <%= f.submit "Disband!", class: "delete" %>
+  <%= f.submit "Destroy!", class: "delete" %>
 <% end %>

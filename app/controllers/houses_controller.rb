@@ -41,12 +41,12 @@ class HousesController < ApplicationController
     @house = House.find(params[:id])
     @house.destroy
 
-    flash[:alert] = "House disbanded!"
+    flash[:alert] = "House destroyed! Is that 'The Rains of Castemere' I hear playing?"
     redirect_to houses_path
   end
 
   private
     def house_params
-      params.require(:house).permit(:name, :img_url, :motto)
+      params.require(:house).permit(:name, :sentence, :img_url, :motto)
     end
 end

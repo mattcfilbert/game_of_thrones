@@ -21,6 +21,15 @@
 
  body {
    font-family: "thrones";
+   color: gold;
+   background-color: black;
+   text-align: center;
+ }
+
+ nav {
+   border-style: groove;
+   border-color: gold;
+   border-width: 5px;
  }
 
  .flash {
@@ -38,6 +47,7 @@
 
  .index_img {
    width: 300px;
+   margin: 10px;
  }
 
 .house {
@@ -47,4 +57,5 @@
  .houses {
    display: flex;
    flex-direction: row;
+   justify-content: center;
  }
